@@ -101,6 +101,14 @@
             "email": "nilam@temp.com",
             "phoneNumber": "7680984567",
             "department": "node"
+        },
+        {
+            "fullname": "nita",
+            "username": "NITA21456",
+            "password": "$2b$10$0wvnfqy/.uvtmjlxWqZjqOpjpkTyyfHH9.Qgry2N9igLW6xa8aHnW",
+            "email": "nita@temp.com",
+            "phoneNumber": "8780984567",
+            "department": "react"
         }
     ]
 }

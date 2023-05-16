@@ -1,6 +1,5 @@
 const fs = require('fs');
 const jwt = require('jsonwebtoken');
-
 require('dotenv').config();
 
 function getUsersFromFile() {
@@ -8,18 +7,23 @@ function getUsersFromFile() {
   return JSON.parse(data);
 }
 
-function isUserUnique(user) {
+// function isUserUnique(user) {
+//   const users = getUsersFromFile().users;
+//   for (let i = 0; i < users.length; i++) {
+//     if (users[i].username === user.username || users[i].email === user.email) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+function isUserUnique(username,email) {
   const users = getUsersFromFile().users;
   for (let i = 0; i < users.length; i++) {
-    if (users[i].username === user.username || users[i].email === user.email) {
+    if (users[i].username === username || users[i].email === email) {
       return false;
     }
   }
   return true;
-}
-
-function defaultRoute(req,res){
-  res.status(404).json({Error:"Oops!! not found"});
 }
 
 function isAuthorized(department) {
@@ -37,13 +41,13 @@ function authenticateToken(req, res, next) {
   
     jwt.verify(token, process.env.SECRET_KEY, (err, decoded) => {
       if (err) {
-        return res.status(403).json({ error: 'Forbidden1' });
+        return res.status(403).json({error:'jwt invalid'});
       }
       req.username = decoded.username;
       const user = getUsersFromFile().users.find((user) => user.username === decoded.username);
       console.log(user)
       if (!user || !isAuthorized(user.department)) {
-        return res.status(403).json({ error: 'Forbidden2' });
+        return res.status(403).json({ error: 'Forbidden' });
       }
     next();
   });
@@ -52,7 +56,6 @@ function authenticateToken(req, res, next) {
 module.exports = {
   getUsersFromFile,
   isUserUnique,
-  defaultRoute,
   authenticateToken,
   isAuthorized
 };
