@@ -1,47 +1,58 @@
 const { isUserUnique } = require('../middleware/middleware');
-const { validatePhoneNumber } = require('../v1/validator');
+const { isEmpty, validatePhoneNumber } = require('../../../helper/helper');
+const {message,status}= require('../../../logMessages/message')
 
-function validateAddUsername(username) {
+function validateUsername(username) {
   const regex = /^[a-z][\w+@#$%_.]/;
   return regex.test(username);
 }
 
-function validateAddPassword(password) {
+function validatePassword(password) {
   const regex = /^[A-Z][\w+@#$%_.]{8,16}$/;
   return regex.test(password);
-}
-
-function validateUpdateUsername(username) {
-  const regex = /^[A-Z+]{3,9}$/;
-  return regex.test(username);
-}
-
-function validateUpdatePassword(password) {
-  const regex = /^[0-9+]{8,16}$/;
-  return regex.test(password)
-}
-
-function isEmpty(username, password, fullname, email, phoneNumber, department) {
-  if (!username || !password || !fullname || !email || !phoneNumber || !department) {
-    return true;
-  }
-  return false;
 }
 
 function validateAddUser(req, res, next) {
   const { fullname, username, password, email, phoneNumber, department } = req.body;
   if (isEmpty(username, password, fullname, email, phoneNumber, department)) {
-    return res.status(400).json({ error: 'All fields are required...!!' });
+    return res.status(status.badRequest).json(message.checkAddUser);
   } else if (!isUserUnique(username, email)) {
-    return res.status(400).json({ error: 'Username or email already exists...' });
-  } else if (!validateAddUsername(username)) {
-    return res.status(400).json({ error: 'Invalid username. It should contain all small letter, and one symbol.' });
-  } else if (!validateAddPassword(password)) {
-    return res.status(400).json({ error: 'Invalid password. It should contain at least one capital letter ,at least one symbol, and a total length of 16 characters.' });
+    return res.status(status.badRequest).json(message.checkUniqueUser);
+  } else if (!validateUsername(username)) {
+    return res.status(status.badRequest).json(message.validUserNameV2);
+  } else if (!validatePassword(password)) {
+    return res.status(status.badRequest).json(message.validPasswordV2);
   } else if (!validatePhoneNumber(phoneNumber)) {
-    return res.status(400).json({ error: "Please enter valid phone number" })
+    return res.status(status.badRequest).json(message.validPhoneNumber);
   }
   next();
 }
 
-module.exports = { validateAddUsername, validateAddPassword, validateUpdateUsername, validateUpdatePassword, isEmpty, validateAddUser };
+function validateUpdateUsername(req, res, next) {
+  const { username } = req.body;
+  if (!username) {
+    return res.status(status.badRequest).json(message.usernameRequire);
+  }
+  else if (!validateUsername(username)) {
+    return res.status(status.badRequest).json(message.validUserNameV2);
+  }
+  else {
+    next();
+  }
+}
+
+function validateUpdatePassword(req, res, next) {
+  const { username, password } = req.body;
+  if (!username || !password) {
+    return res.status(status.badRequest).json(message.userNameAndPasswordRequire);
+  }
+  else if (!validatePassword(password)) {
+    return res.status(status.badRequest).json(message.validPasswordV2);
+
+  } else {
+    next();
+  }
+}
+
+
+module.exports = { validateAddUser, validateUpdateUsername, validateUpdatePassword };
