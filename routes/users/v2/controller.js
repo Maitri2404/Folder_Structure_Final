@@ -1,5 +1,6 @@
 const fs = require('fs');
 const bcrypt = require('bcrypt');
+const jwt= require('jsonwebtoken');
 const saltRound = 10;
 const { getUsersFromFile } = require('../../../helper/helper');
 const {message, status}= require('../../../logMessages/message')
