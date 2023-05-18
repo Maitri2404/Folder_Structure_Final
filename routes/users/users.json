@@ -1,1 +1,178 @@
-{"users":[{"fullname":"mita trivedi","username":"MITA21456","password":"Password#34","email":"mita@temp.com","phoneNumber":"8780984567","department":"react"},{"fullname":"Gita trivedi","username":"GITA214568","password":"$2b$10$84LJpuf3lnlaO8DR5SpzZOsJdh2NAgF8bAUGF8zDQYEz0lUuNWdMS","email":"gita@temp.com","phoneNumber":"8780984567"},{"fullname":"mital trivedi","username":"K1234","password":"$2b$10$PnTxeA8B6UfyuCblIr8HKepXJx8JgND52Zve6S8srEq6mtBeC7dDu","email":"kinal@temp.com","phoneNumber":"8780984567","department":"node"},{"fullname":"krish","username":"KRISHH3245","password":"$2b$10$IxIx/jDcBJnI.PUGBT8Q.eweqq.z4k0/QEyGyPa0ZJDnWuxmsP6iW","email":"krish@temp.com","phoneNumber":"8780984567","department":"react"},{"fullname":"mrish","username":"MRISHH3245","password":"$2b$10$fwIMqSbO.DXHnfzN3K/qRu/VeQZ/g.BxAbKkMwskMIgYRFnzGkcya","email":"mrish@temp.com","phoneNumber":"8780984567","department":"node"},{"fullname":"jrish","username":"JRISHH3245","password":"$2b$10$zmhQiWgLmG3GSJyb2fwhXukgTGY9QYd2xCgdJpPZD4igquvu1sWs2","email":"jrish@temp.com","phoneNumber":"8780984567","department":"react"},{"fullname":"hir","username":"HIRISHN","password":"$2b$10$d8miYzaoh.F5R8f83ueO7.RjvVplaMwc8dvY7gZfOUXEajOFQM39y","email":"hir@temp.com","phoneNumber":"8780984567","department":"node"},{"fullname":"hir","username":"HIMANI","password":"Himani@i","email":"himani@temp.com","phoneNumber":"8780984567"},{"fullname":"hir","username":"KHIMANIPI","password":"$2b$10$A3AseHzkz.FMZuINNDXSYuOJ/sDvnlWjv9cPF8R5e3tOJfuCeXIla","email":"khimani@temp.com","phoneNumber":"8780984567","department":"node"},{"fullname":"Nir","username":"NIR","password":"$2b$10$kUaK1DA2nk9gqA7xFPh7heOiKkq9.E6b.9HSHdZY4MoZoazqnXbtu","email":"nir@temp.com","phoneNumber":"8780984567","department":"node"},{"fullname":"Nirav","username":"NIRAV1234","password":"$2b$10$19pr261iPvqBvRPEDsah/OlQEhwW3OwbZPrLO64alnZduaoARH05K","email":"nirav@temp.com","phoneNumber":"8780984567","department":"node"},{"fullname":"Nirav","username":"NIRAV123","password":"$2b$10$WcjaKtdkzg6UVVWtpzxXZe10kDmlex7rcCaDWtNYdoD8xqpJorvKC","email":"nira@temp.com","phoneNumber":"7780984567","department":"node"},{"fullname":"Nilam","username":"NILAM","password":"$2b$10$Tie8GhqZCAJ5rGuf.HN.bOmkG1k90psSCaADu3qKzST8ADn.PKwoS","email":"nilam@temp.com","phoneNumber":"7680984567","department":"node"},{"fullname":"nita","username":"NITA214567","password":"$2b$10$pEHI0q0c4IszWhEXmbUFEOr70gIjQDcK/3DSyllZsML5L.ZW8Q0eq","email":"nita@temp.com","phoneNumber":"8780984567","department":"node"},{"fullname":"maitri","username":"MAITRI12","password":"$2b$10$pNygxHV9vxET8LkebQDlgOWF.hHPLxfemi6ayo2q/aQ4MWt4WpNDK","email":"maitri@temp.com","phoneNumber":"8780984567","department":"node"},{"fullname":"meehi","username":"meehi@hi","password":"$2b$10$PxMvKJtC2mVqPC5uONaOyO/rJkZVTWs83w3VcnYgb5wu0GjfgUpdO","email":"meehi@temp.com","phoneNumber":"7880984567","department":"node"},{"fullname":"janvi","username":"j@nvi","password":"$2b$10$a8pTntqb00iELXQ0eLLcy.im2opgWODwDIpqwyf6HN8gBhOziNCpG","email":"janvi@temp.com","phoneNumber":"7880984567","department":"node"}]}
+{
+  "users": [
+    {
+      "fullName": "Gita trivedi",
+      "username": "GITA214568",
+      "password": "$2b$10$84LJpuf3lnlaO8DR5SpzZOsJdh2NAgF8bAUGF8zDQYEz0lUuNWdMS",
+      "email": "gita@temp.com",
+      "phoneNumber": "8780984567"
+    },
+    {
+      "fullName": "mital trivedi",
+      "username": "K1234",
+      "password": "$2b$10$PnTxeA8B6UfyuCblIr8HKepXJx8JgND52Zve6S8srEq6mtBeC7dDu",
+      "email": "mital@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "node"
+    },
+    {
+      "fullName": "krish",
+      "username": "KRISHH3245",
+      "password": "$2b$10$IxIx/jDcBJnI.PUGBT8Q.eweqq.z4k0/QEyGyPa0ZJDnWuxmsP6iW",
+      "email": "krish@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "react"
+    },
+    {
+      "fullName": "mrish",
+      "username": "MRISHH3245",
+      "password": "$2b$10$fwIMqSbO.DXHnfzN3K/qRu/VeQZ/g.BxAbKkMwskMIgYRFnzGkcya",
+      "email": "mrish@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "node"
+    },
+    {
+      "fullName": "jrish",
+      "username": "JRISHH3245",
+      "password": "$2b$10$zmhQiWgLmG3GSJyb2fwhXukgTGY9QYd2xCgdJpPZD4igquvu1sWs2",
+      "email": "jrish@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "react"
+    },
+    {
+      "fullName": "hir",
+      "username": "HIRISHN",
+      "password": "$2b$10$d8miYzaoh.F5R8f83ueO7.RjvVplaMwc8dvY7gZfOUXEajOFQM39y",
+      "email": "hir@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "node"
+    },
+    {
+      "fullName": "hir",
+      "username": "HIMANI",
+      "password": "Himani@i",
+      "email": "himani@temp.com",
+      "phoneNumber": "8780984567"
+    },
+    {
+      "fullName": "hir",
+      "username": "KHIMANIPI",
+      "password": "$2b$10$A3AseHzkz.FMZuINNDXSYuOJ/sDvnlWjv9cPF8R5e3tOJfuCeXIla",
+      "email": "khimani@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "node"
+    },
+    {
+      "fullName": "Nir",
+      "username": "NIR",
+      "password": "$2b$10$kUaK1DA2nk9gqA7xFPh7heOiKkq9.E6b.9HSHdZY4MoZoazqnXbtu",
+      "email": "nir@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "node"
+    },
+    {
+      "fullName": "Nirav",
+      "username": "NIRAV1234",
+      "password": "$2b$10$19pr261iPvqBvRPEDsah/OlQEhwW3OwbZPrLO64alnZduaoARH05K",
+      "email": "nirav@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "node"
+    },
+    {
+      "fullName": "Nirav",
+      "username": "NIRAV123",
+      "password": "$2b$10$WcjaKtdkzg6UVVWtpzxXZe10kDmlex7rcCaDWtNYdoD8xqpJorvKC",
+      "email": "nira@temp.com",
+      "phoneNumber": "7780984567",
+      "department": "node"
+    },
+    {
+      "fullName": "Nilam",
+      "username": "NILAM",
+      "password": "$2b$10$Tie8GhqZCAJ5rGuf.HN.bOmkG1k90psSCaADu3qKzST8ADn.PKwoS",
+      "email": "nilam@temp.com",
+      "phoneNumber": "7680984567",
+      "department": "node"
+    },
+    {
+      "fullName": "nita",
+      "username": "NITA214567",
+      "password": "$2b$10$pEHI0q0c4IszWhEXmbUFEOr70gIjQDcK/3DSyllZsML5L.ZW8Q0eq",
+      "email": "nita@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "node"
+    },
+    {
+      "fullName": "maitri",
+      "username": "MAITRI12",
+      "password": "$2b$10$pNygxHV9vxET8LkebQDlgOWF.hHPLxfemi6ayo2q/aQ4MWt4WpNDK",
+      "email": "maitri@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "node"
+    },
+    {
+      "fullName": "meehi",
+      "username": "meehi@hi",
+      "password": "$2b$10$PxMvKJtC2mVqPC5uONaOyO/rJkZVTWs83w3VcnYgb5wu0GjfgUpdO",
+      "email": "meehi@temp.com",
+      "phoneNumber": "7880984567",
+      "department": "node"
+    },
+    {
+      "fullName": "janvi",
+      "username": "j@nvi",
+      "password": "$2b$10$a8pTntqb00iELXQ0eLLcy.im2opgWODwDIpqwyf6HN8gBhOziNCpG",
+      "email": "janvi@temp.com",
+      "phoneNumber": "7880984567",
+      "department": "node"
+    },
+    {
+      "fullName": "sanvi",
+      "username": "s@nvi",
+      "password": "$2b$10$JXsFVSAFdITTq.GVT1BnY.hkAUk4BfD4DpdvXd1c2pVBvJDF98SDW",
+      "email": "sanvi@temp.com",
+      "phoneNumber": "7880984567",
+      "department": "node"
+    },
+    {
+      "fullName": "manvi",
+      "username": "m@nvi",
+      "password": "$2b$10$qNM98fdY/gV2DpEIT2gZquok81fIBdK6GAssdCZEOlzB0Cb522jLC",
+      "email": "manvi@temp.com",
+      "phoneNumber": "7880984567",
+      "department": "node"
+    },
+    {
+      "fullName": "anvi",
+      "username": "a@nvi",
+      "password": "$2b$10$TArLoLTDS6yOqtv35FpQnewvZrLpt7NcPOE8/RpCElr52HFeY1mmS",
+      "email": "anvi@temp.com",
+      "phoneNumber": "7880984567",
+      "department": "node"
+    },
+    {
+      "fullName": "minal",
+      "username": "min@l",
+      "password": "$2b$10$.KDQ0OGrlri4yzkPTj6ADu9YSy5wG4oJJtUp041sfzeXb/OaZ6x0q",
+      "email": "minal@temp.com",
+      "phoneNumber": "9980984567",
+      "department": "node"
+    },
+    {
+      "fullName": "rinal",
+      "username": "rin@l",
+      "password": "$2b$10$WefYmqoMTvTe9RfF5kT4feLL/YvdHq8K9n5AkyKLqIU4NVIw/UTaG",
+      "email": "rinal@temp.com",
+      "phoneNumber": "9980984567",
+      "department": "node"
+    },
+    {
+      "fullName": "krima",
+      "username": "KRIMA123",
+      "password": "$2b$10$nLucV0izPaG2muxzEPZ0Du84B907t7EXw81oRpm7rfxQ80RU2OxEa",
+      "email": "krima@temp.com",
+      "phoneNumber": "8780984567",
+      "department": "node"
+    }
+  ]
+}
